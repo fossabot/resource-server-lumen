@@ -7,7 +7,8 @@ use Closure;
 use Illuminate\Auth\AuthenticationException;
 use Illuminate\Contracts\Auth\Factory as Auth;
 use League\OAuth2\Server\Exception\OAuthServerException;
-use Symfony\Bridge\PsrHttpMessage\Factory\DiactorosFactory;
+use Nyholm\Psr7\Factory\Psr17Factory;
+use Symfony\Bridge\PsrHttpMessage\Factory\PsrHttpFactory;
 
 class Authenticate
 {
@@ -47,10 +48,13 @@ class Authenticate
             $accessTokenRepository,
             $publicKeyPath
         );
-        $psr = (new DiactorosFactory)->createRequest($request);
+
+        $psr17Factory = new Psr17Factory();
+        $psrHttpFactory = new PsrHttpFactory($psr17Factory, $psr17Factory, $psr17Factory, $psr17Factory);
+        $psrRequest = $psrHttpFactory->createRequest($request);
 
         try {
-            $server->validateAuthenticatedRequest($psr);
+            $server->validateAuthenticatedRequest($psrRequest);
         } catch (OAuthServerException $e) {
             throw new AuthenticationException;
         }
