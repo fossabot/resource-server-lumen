@@ -1,0 +1,8 @@
+.phpunit.result.cache
+/storage/logs/*.log
+/storage/*.key
+Homestead.json
+Homestead.yaml
+composer.lock
+/vendor
+.env
