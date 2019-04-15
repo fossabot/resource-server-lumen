@@ -13,10 +13,6 @@ Replace `[my-app-name]` with the desired directory name for your new application
 
 Copy the public key from your authorization server to `storage/oauth-public.key` 
 
-## Framework
-
-- Lumen PHP Framework
-
 ## License
 
-This library is open-source software licensed under the MIT license.
+This library is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).

@@ -1,12 +1,22 @@
 {
     "name": "phootobr/resource-server-lumen",
     "description": "The Resource Server Phooto with Lumen Framework.",
-    "keywords": ["framework", "laravel", "lumen", "resource server"],
-    "license": "MIT",
     "type": "project",
+    "homepage": "https://github.com/phootobr/resource-server-lumen",
+    "keywords": ["framework", "laravel", "lumen", "resource-server", "skeleton"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/phootobr/resource-server-lumen/issues",
+        "source": "https://github.com/phootobr/resource-server-lumen"
+    },
+    "authors": [
+        {
+            "name": "Samuel Fontebasso",
+            "email": "samuel.fonte@phooto.com.br"
+        }
+    ],
     "require": {
         "php": ">=7.1.3",
-        "ext-json": "*",
         "laravel/lumen-framework": "5.8.*",
         "league/oauth2-server": "^7.3",
         "nyholm/psr7": "^1.1",
