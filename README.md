@@ -1,4 +1,6 @@
 # PHP Resource Server
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphootobr%2Fresource-server-lumen.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphootobr%2Fresource-server-lumen?ref=badge_shield)
+
 
 ## Install
 
@@ -16,3 +18,6 @@ Copy the public key from your authorization server to `storage/oauth-public.key`
 ## License
 
 This library is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fphootobr%2Fresource-server-lumen.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fphootobr%2Fresource-server-lumen?ref=badge_large)
